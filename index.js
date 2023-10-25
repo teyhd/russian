@@ -2,7 +2,7 @@ var appDir = path.dirname(import.meta.url);
 appDir = appDir.split('///')
 appDir = appDir[1]
 console.log(appDir);
-    
+
 import {mlog,say} from './vendor/logs.js'
 process.on('uncaughtException', (err) => {
 mlog('Глобальный косяк приложения!!! ', err.stack);
@@ -427,18 +427,10 @@ function getcurip(str) {
 
 async function start(){
     try {
-        if (test){
-            app.listen(707,()=> {
-                mlog('Сервер - запущен')
-                mlog('Порт:',707);
-            })
-        } else{
-            var options = {
-               // key: fs.readFileSync('/etc/letsencrypt/live/platon.teyhd.ru/privkey.pem'),
-                //cert: fs.readFileSync('/etc/letsencrypt/live/platon.teyhd.ru/fullchain.pem')
-              };
-           /// https.createServer(options, app).listen(443);
-        }
+        app.listen(707,()=> {
+            mlog('Сервер - запущен')
+            mlog('Порт:',707);
+        })
 
         mlog('Сервер - запущен')
     } catch (e) {
