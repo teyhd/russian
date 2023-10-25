@@ -2,13 +2,13 @@ var appDir = path.dirname(import.meta.url);
 appDir = appDir.split('///')
 appDir = appDir[1]
 console.log(appDir);
-
+    
 import {mlog,say} from './vendor/logs.js'
 process.on('uncaughtException', (err) => {
 mlog('Глобальный косяк приложения!!! ', err.stack);
 }); 
 
-let test = true
+let test = false
 //let platurl = "api-dev" 
 //platurl = "api" 
 
