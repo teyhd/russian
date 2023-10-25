@@ -8,3 +8,309 @@
  19:16:46 Сервер - запущен
  19:16:46 Сервер - запущен
  19:16:46 Порт: 707
+ 19:21:48 / undefined 1
+ 19:23:50 / undefined 1
+ 19:24:01 / undefined 1
+ 19:34:54 Сервер - запущен
+ 19:34:54 Сервер - запущен
+ 19:34:54 Порт: 707
+ 19:34:56 / undefined 1
+ 19:40:43 / undefined 1
+ 19:41:15 Сервер - запущен
+ 19:41:15 Сервер - запущен
+ 19:41:15 Порт: 707
+ 19:41:19 /admin undefined 1
+ 19:43:22 Сервер - запущен
+ 19:43:22 Сервер - запущен
+ 19:43:22 Порт: 707
+ 19:43:32 / undefined 1
+ 19:43:34 / undefined 1
+ 19:43:39 Сервер - запущен
+ 19:43:39 Сервер - запущен
+ 19:43:39 Порт: 707
+ 19:43:40 / undefined 1
+ 19:45:16 Сервер - запущен
+ 19:45:16 Сервер - запущен
+ 19:45:16 Порт: 707
+ 19:45:20 Сервер - запущен
+ 19:45:20 Сервер - запущен
+ 19:45:20 Порт: 707
+ 19:45:45 / undefined 1
+ 19:45:52 /admin undefined 1
+ 19:46:18 /admin undefined 1
+ 19:46:41 /admin undefined 1
+ 19:46:57 /admin undefined 1
+ 19:47:12 /admin undefined 1
+ 19:47:34 /admin undefined 1
+ 19:48:01 /admin undefined 1
+ 19:48:02 /ans undefined 1 
+ id:3
+ 19:48:55 Сервер - запущен
+ 19:48:55 Сервер - запущен
+ 19:48:55 Порт: 707
+ 19:49:24 Сервер - запущен
+ 19:49:24 Сервер - запущен
+ 19:49:24 Порт: 707
+ 19:51:24 Сервер - запущен
+ 19:51:24 Сервер - запущен
+ 19:51:24 Порт: 707
+ 19:51:27 /ans undefined 1 
+ id:3
+ 19:52:13 /ans undefined 1 
+ id:3
+ 19:52:18 /ans undefined 1 
+ id:3
+ 19:52:37 Сервер - запущен
+ 19:52:37 Сервер - запущен
+ 19:52:37 Порт: 707
+ 19:52:38 /ans undefined 1 
+ id:3
+ 19:52:41 /ans undefined 1 
+ id:3
+ 19:53:12 Сервер - запущен
+ 19:53:12 Сервер - запущен
+ 19:53:12 Порт: 707
+ 19:53:13 /ans undefined 1 
+ id:3
+ 19:53:32 Сервер - запущен
+ 19:53:32 Сервер - запущен
+ 19:53:32 Порт: 707
+ 19:53:34 /ans undefined 1 
+ id:3
+ 19:53:55 /ans undefined 1 
+ id:3
+ 19:54:07 /ans undefined 1 
+ id:3
+ 19:54:45 /ans undefined 1 
+ id:3
+ 19:54:58 /ans undefined 1 
+ id:3
+ 19:54:58 /ans undefined 1 
+ id:3
+ 19:54:58 /ans undefined 1 
+ id:3
+ 19:55:08 /ans undefined 1 
+ id:3
+ 19:55:51 /ans undefined 1 
+ id:3
+ 19:56:20 Сервер - запущен
+ 19:56:20 Сервер - запущен
+ 19:56:20 Порт: 707
+ 19:58:15 /ans undefined 1 
+ id:3
+ 19:58:16 / undefined 1
+ 19:59:27 / undefined 1
+ 19:59:31 / undefined 1
+ 19:59:42 / undefined 1
+ 20:00:34 / undefined 1
+ 20:03:07 Сервер - запущен
+ 20:03:07 Сервер - запущен
+ 20:03:07 Порт: 707
+ 20:04:59 Сервер - запущен
+ 20:04:59 Сервер - запущен
+ 20:04:59 Порт: 707
+ 20:05:16 Сервер - запущен
+ 20:05:16 Сервер - запущен
+ 20:05:16 Порт: 707
+ 20:05:21 / undefined 1
+ 20:07:49 Сервер - запущен
+ 20:07:49 Сервер - запущен
+ 20:07:49 Порт: 707
+ 20:07:56 / undefined 1
+ 20:08:45 / undefined 1
+ 20:08:47 / undefined 1
+ 20:09:33 Сервер - запущен
+ 20:09:33 Сервер - запущен
+ 20:09:33 Порт: 707
+ 20:09:34 / undefined 1
+ 20:10:01 Сервер - запущен
+ 20:10:01 Сервер - запущен
+ 20:10:01 Порт: 707
+ 20:10:24 / undefined 1
+ 20:10:58 /as undefined 1
+ 20:11:03 /add undefined 1
+ 20:11:25 / undefined 1
+ 20:13:19 / undefined 1
+ 20:15:03 / undefined 1
+ 20:15:04 / undefined 1
+ 20:15:05 / undefined 1
+ 20:15:06 / undefined 1
+ 20:15:58 / undefined 1
+ 20:16:08 / undefined 1
+ 20:17:24 / undefined 1
+ 20:17:27 / undefined 1
+ 20:17:35 / undefined 1
+ 20:17:51 / undefined 1
+ 20:18:33 / undefined 1
+ 20:20:03 Сервер - запущен
+ 20:20:03 Сервер - запущен
+ 20:20:03 Порт: 707
+ 20:20:32 / undefined 1
+ 20:20:35 /add undefined 1 
+ nick:sdf 
+ ask:df
+ 20:20:48 Сервер - запущен
+ 20:20:48 Сервер - запущен
+ 20:20:48 Порт: 707
+ 20:22:12 / undefined 1
+ 20:22:15 /add undefined 1 
+ nick:dfgfdg 
+ ask:dfgdfg
+ 20:22:15 Глобальный косяк приложения!!!  Error: Unknown column 'dfgfdg' in 'field list'
+    at PromisePool.query (C:\projects\anon\node_modules\mysql2\promise.js:356:22)
+    at add_ask (file:///C:/projects/anon/index.js:158:39)
+    at file:///C:/projects/anon/index.js:189:11
+    at Layer.handle [as handle_request] (C:\projects\anon\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\projects\anon\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\projects\anon\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\projects\anon\node_modules\express\lib\router\layer.js:95:5)
+    at C:\projects\anon\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\projects\anon\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\projects\anon\node_modules\express\lib\router\index.js:280:10)
+ 20:22:49 Сервер - запущен
+ 20:22:49 Сервер - запущен
+ 20:22:49 Порт: 707
+ 20:22:49 /add undefined 1 
+ nick:dfgfdg 
+ ask:dfgdfg
+ 20:23:03 / undefined 127.0.0.1
+ 20:23:10 /add undefined 1 
+ nick:sdfsdf 
+ ask:sdfsdf
+ 20:23:40 / undefined 1
+ 20:23:49 /add undefined 1 
+ nick:fsdf 
+ ask:dfsdf
+ 20:24:26 /add undefined 1 
+ nick:fsdf 
+ ask:ыапв
+ 20:24:32 /admin undefined 1
+ 20:24:37 /ans undefined 1 
+ id:4
+ 20:26:52 Сервер - запущен
+ 20:26:52 Сервер - запущен
+ 20:26:52 Порт: 707
+ 20:27:08 / undefined 1
+ 20:27:27 /ans undefined 1 
+ id:4
+ 20:27:29 /addans undefined 1 
+ id:4 
+ ask:sdf
+ 20:28:57 /admin undefined 1
+ 20:31:11 /ans undefined 1 
+ id:3
+ 20:31:13 /addans undefined 1 
+ id:3 
+ ask:sfdf
+ 20:31:13 /admin undefined 1
+ 20:31:14 /ans undefined 1 
+ id:3
+ 20:33:49 Сервер - запущен
+ 20:33:49 Сервер - запущен
+ 20:33:49 Порт: 707
+ 20:33:56 Сервер - запущен
+ 20:33:56 Сервер - запущен
+ 20:33:56 Порт: 707
+ 20:33:57 / undefined 1
+ 20:34:13 /add undefined 1 
+ nick:Влад -тетс 
+ ask:Как ебуться мишки?
+ 20:34:17 /admin undefined 1
+ 20:34:18 /ans undefined 1 
+ id:8
+ 20:34:23 /addans undefined 1 
+ id:8 
+ ans:Задорно
+ 20:34:23 Глобальный косяк приложения!!!  ReferenceError: qer is not defined
+    at set_ans (file:///C:/projects/anon/index.js:164:9)
+    at file:///C:/projects/anon/index.js:202:11
+    at Layer.handle [as handle_request] (C:\projects\anon\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\projects\anon\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\projects\anon\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\projects\anon\node_modules\express\lib\router\layer.js:95:5)
+    at C:\projects\anon\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\projects\anon\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\projects\anon\node_modules\express\lib\router\index.js:280:10)
+    at file:///C:/projects/anon/index.js:129:5
+ 20:34:53 /addans undefined 1 
+ id:8 
+ ans:Задорно
+ 20:34:53 Глобальный косяк приложения!!!  ReferenceError: qer is not defined
+    at set_ans (file:///C:/projects/anon/index.js:164:9)
+    at file:///C:/projects/anon/index.js:202:11
+    at Layer.handle [as handle_request] (C:\projects\anon\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\projects\anon\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\projects\anon\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\projects\anon\node_modules\express\lib\router\layer.js:95:5)
+    at C:\projects\anon\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\projects\anon\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\projects\anon\node_modules\express\lib\router\index.js:280:10)
+    at file:///C:/projects/anon/index.js:129:5
+ 20:34:57 /addans undefined 1 
+ id:8 
+ ans:Задорно
+ 20:34:57 Глобальный косяк приложения!!!  ReferenceError: qer is not defined
+    at set_ans (file:///C:/projects/anon/index.js:164:9)
+    at file:///C:/projects/anon/index.js:202:11
+    at Layer.handle [as handle_request] (C:\projects\anon\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\projects\anon\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\projects\anon\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\projects\anon\node_modules\express\lib\router\layer.js:95:5)
+    at C:\projects\anon\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\projects\anon\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\projects\anon\node_modules\express\lib\router\index.js:280:10)
+    at file:///C:/projects/anon/index.js:129:5
+ 20:34:57 /addans undefined 1 
+ id:8 
+ ans:Задорно
+ 20:34:57 Глобальный косяк приложения!!!  ReferenceError: qer is not defined
+    at set_ans (file:///C:/projects/anon/index.js:164:9)
+    at file:///C:/projects/anon/index.js:202:11
+    at Layer.handle [as handle_request] (C:\projects\anon\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\projects\anon\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\projects\anon\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\projects\anon\node_modules\express\lib\router\layer.js:95:5)
+    at C:\projects\anon\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\projects\anon\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\projects\anon\node_modules\express\lib\router\index.js:280:10)
+    at file:///C:/projects/anon/index.js:129:5
+ 20:34:57 /addans undefined 1 
+ id:8 
+ ans:Задорно
+ 20:34:57 Глобальный косяк приложения!!!  ReferenceError: qer is not defined
+    at set_ans (file:///C:/projects/anon/index.js:164:9)
+    at file:///C:/projects/anon/index.js:202:11
+    at Layer.handle [as handle_request] (C:\projects\anon\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\projects\anon\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\projects\anon\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\projects\anon\node_modules\express\lib\router\layer.js:95:5)
+    at C:\projects\anon\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\projects\anon\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\projects\anon\node_modules\express\lib\router\index.js:280:10)
+    at file:///C:/projects/anon/index.js:129:5
+ 20:35:58 Сервер - запущен
+ 20:35:58 Сервер - запущен
+ 20:35:58 Порт: 707
+ 20:35:58 /addans undefined 1 
+ id:8 
+ ans:Задорно
+ 20:35:58 Глобальный косяк приложения!!!  ReferenceError: qer is not defined
+    at set_ans (file:///C:/projects/anon/index.js:164:9)
+    at file:///C:/projects/anon/index.js:202:11
+    at Layer.handle [as handle_request] (C:\projects\anon\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\projects\anon\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\projects\anon\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\projects\anon\node_modules\express\lib\router\layer.js:95:5)
+    at C:\projects\anon\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\projects\anon\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\projects\anon\node_modules\express\lib\router\index.js:280:10)
+    at file:///C:/projects/anon/index.js:129:5
+ 20:36:48 Сервер - запущен
+ 20:36:48 Сервер - запущен
+ 20:36:48 Порт: 707
+ 20:36:52 /addans undefined 1 
+ id:8 
+ ans:Задорно
+ 20:36:52 /admin undefined 1
+ 20:36:54 / undefined 1
+ 20:37:36 / undefined 1

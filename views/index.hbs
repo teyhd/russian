@@ -11,23 +11,48 @@
             <label for="textarea1">Задайте свой вопрос</label>
         </div>
         <div class="input-field col m4 s12">
-                <button class="btn-small waves-effect waves-light">
+                <button id="sendask" class="btn-small waves-effect waves-light">
                     <i class="material-icons right">send</i> Отправить</button>
         </div>
         
         </div>
     </form>
     <div class="row">
+        {{#each conts}}  
+        <div class="text col s12 m5">
+        <h4 class="center">{{ask}}</h4>
+        <hr />
+        <p>{{ans}}</p>
+        <h6 class="center">{{nick}}</h6>
+        </div>
+        {{/each}}
         <div class="text col s12 m5">
         <h4 class="center">Как пишется слово деревянный?</h4>
-        <hr />
-        <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
-        </div>
-                        <div class="text col s12 m6">
-        <h4 class="center">Как пишется слово оловянный?</h4>
         <hr />
         <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
         </div>
     </div>
     </div>
 </div>
+<script>
+    $( "#sendask" ).click(function() {
+      event.preventDefault();
+      if ($( "#textarea1" ).val()!='' && $( "#last_name" ).val()!=''){
+        $.get( "/add", {nick:$( "#last_name" ).val(),ask: $( "#textarea1" ).val()} ).done(function( data ) {
+           console.log( "Data Loaded: " + data );
+            if (data=='ok'){
+            M.toast({html: 'Успешно! Ответ появится на этой странице', classes: '#26a69a teal lighten-1 rounded'});
+          $( "#textarea1" ).val('')
+           // reload(true);
+          } else {
+            M.toast({html: 'Ошибка!', classes: '#ef5350 red lighten-1 rounded'});
+          }
+        })
+      } else{
+         M.toast({html: 'Заполните все поля!', classes: '#ef5350 red lighten-1 rounded'});
+      }
+    })
+</script>
+
+
+    

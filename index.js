@@ -13,7 +13,7 @@ let test = true
 //platurl = "api" 
 
 import request from 'request'
-
+import mysql from 'mysql2'
  
 import express from 'express'
 import exphbs from 'express-handlebars'
@@ -25,6 +25,21 @@ import fs from 'fs-extra'
 import https from 'https'
 import urlencode from 'urlencode';
 
+let sets = {
+    host: 'platon.teyhd.ru',
+    user: 'platon',
+    password : '258000',
+    database: 'tgbot',
+    charset : 'utf8mb4_general_ci',
+    waitForConnections: true,
+    connectionLimit: 50,
+    maxIdle: 50, // max idle connections, the default value is the same as `connectionLimit`
+    idleTimeout: 60000, // idle connections timeout, in milliseconds, the default value 60000
+    queueLimit: 0,
+    enableKeepAlive: true,
+    keepAliveInitialDelay: 0
+}
+const pool = mysql.createPool(sets).promise()
 
 const app = express();
 const hbs = exphbs.create({
@@ -116,12 +131,80 @@ app.use(async function (req, res, next) {
     
 })
 
+async function get_main(){
+    const qer = `SELECT * from asks WHERE NOT (ans IS NULL)`
+    const [rows, fields] = await pool.query(qer)
+    console.dir(rows.length)
+    return rows;
+}
+
+async function get_for_ans(){
+    const qer = `SELECT * from asks WHERE (ans IS NULL)`
+    const [rows, fields] = await pool.query(qer)
+    console.dir(rows.length)
+    return rows;
+}
+
+async function get_by_id(id){
+    const qer = `SELECT * from asks WHERE id=${id}`
+    const [rows, fields] = await pool.query(qer)
+    //console.dir(rows[0])
+    return rows[0];
+}
+
+
+async function add_ask(nick,ask){
+    let qer = `INSERT INTO asks (nick,ask) VALUES ('${nick}','${ask}');`
+    const [rows, fields] = await pool.query(qer);
+    console.dir(rows);
+    return rows.insertId;
+}
+
+async function set_ans(id,ans){
+    let qer = `UPDATE asks SET ans='${ans}' WHERE id=${id};` 
+    const [rows, fields] = await pool.query(qer)
+    console.dir(rows);
+    return rows;
+}
+
 app.get('/',async (req,res)=>{
     res.render('index',{
         title: 'Грамотей',
+        conts: await get_main(),
         auth: 1
     });
 })  
+
+app.get('/admin',async (req,res)=>{
+    res.render('admin',{
+        title: 'Грамотей',
+        conts: await get_for_ans(),
+        auth: 1
+    });
+})  
+
+app.get('/ans',async (req,res)=>{
+    res.render('chg',{
+        title: 'Грамотей',
+        conts: await get_by_id(req.query.id),
+        auth: 1
+    });
+})  
+
+app.get('/add',async (req,res)=>{
+    console.log(req.query);
+    await add_ask(req.query.nick,req.query.ask)
+   res.send('ok')
+})  
+
+app.get('/addans',async (req,res)=>{
+    console.log(req.query);
+    await set_ans(req.query.id,req.query.ans)
+    res.send('ok')
+})  
+
+
+
 
 app.get('/auth',async (req,res)=>{
     console.log(req.query);
@@ -363,117 +446,4 @@ async function start(){
     }
 }
 
-//send_url()
-
-async function send_url(url,access,vkhas,less){
-    var hrth = `Запись урока`
-    var name = ``
-    var cont = `<h1>Запись урока </h1><video src="https://platon.teyhd.ru:707/video/${url}" controls></video>`
-    name = `VK`
-    cont = `<h1>Запись урока </h1> <iframe src="${url}" width="853" height="480" allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameborder="0" allowfullscreen></iframe>`
-
-    request({
-        url: `https://${platurl}.platonics.ru/teacher/steps`,
-        headers: {
-            'Content-Type': 'application/json',
-            "Authorization": `Bearer ${access}`
-          },
-        method: "POST",
-        json: true,  
-        body: {
-            "title": "Запись урока"+name,
-            "lesson_id": less,
-            "type": "html",
-            "previous_step_id": 0,
-            "order_number": 0
-        }
-    }, function (error, response, body){
-        //console.log(response);
-        console.log(body);
-        request({
-            url: `https://${platurl}.platonics.ru/teacher/htmls`,
-            headers: {
-                'Content-Type': 'application/json',
-                "Authorization": `Bearer ${access}`
-              },
-            method: "POST",
-            json: true,  
-            body: {
-                "title": "Запись урока "+name,
-                "step_id": body.id,
-                "content": cont
-            }
-        }, function (error, response, body){
-            console.log(error);
-            console.log(body);
-            
-        });
-
-    });
-}
-
-start();
-/*
-let bodys ={}
-bodys.access = `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzAzOTQyOTAxLCJpYXQiOjE2OTUzMDI5MDEsImp0aSI6IjU3YmE3OTlhZDYxNzQyOGY4ODlkMTFmZjRmNzAzMTE0IiwidXNlcl9pZCI6NH0.IWYCy0FGkhRoxMhDffLZZd7mu_qcdF9tEGZymc_Ha10`
-
-let body = {course_id:205001926792,group_id:1,stream_url:(`http://platon.teyhd.ru:1935/obs1/house/playlist.m3u8`),start_date:"2023-10-06"}
-console.log(body);
-request({
-    url: `https://${platurl}.platonics.ru/teacher/streams/`,
-    headers: {
-        'Content-Type': 'application/json',
-        "Authorization": `Bearer ${bodys.access}`
-      },
-    method: "POST",
-    json: true,  
-    body: body
-},function (error, response, body) {
-    console.log(response.toJSON());
-    console.log(response.statusCode);
-  //  mlog(body);
-})
-*/
-/*
-let body = {end_date:"2023-10-06"}
-console.log(body);
-request({
-    url: `https://${platurl}.platonics.ru/teacher/streams/652908522524`,
-    headers: {
-        'Content-Type': 'application/json',
-        "Authorization": `Bearer ${bodys.access}`
-      },
-    method: "POST",
-    json: true,  
-    body: body
-},function (error, response, body) {
-   // console.log(response.toJSON());
-    console.log(response.statusCode);
-    mlog(body);
-})
-*/
-
-function getdate() {
-    let d = new Date()
-    return `${d.getFullYear()}-${curdate(d.getMonth()+ 1)}-${curdate(d.getDate())}`
-}
-
-function curdate(num) {
-    return num<10 ? '0'+num : num
-}
-
-
-//448397830121
-//973497765181
-
-//172.24.0.151  172.24.0.51
-/*
-http://platon.teyhd.ru:1935/obs1/kab9/playlist.m3u
-http://platon.teyhd.ru:1935/obs1/kab12/playlist.m3u
-http://platon.teyhd.ru:1935/obs1/kab14/playlist.m3u
-http://platon.teyhd.ru:1935/obs1/kab15/playlist.m3u
-http://platon.teyhd.ru:1935/obs1/kab16/playlist.m3u
-http://platon.teyhd.ru:1935/obs1/kab18/playlist.m3u
-http://platon.teyhd.ru:1935/obs1/kab21/playlist.m3u
-http://platon.teyhd.ru:1935/obs1/kab/playlist.m3u
-*/
+start()

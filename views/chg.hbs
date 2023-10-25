@@ -1,0 +1,31 @@
+<h4 class="center">№{{conts.id}} Ник: {{conts.nick}}</h4>
+<h4 class="center">Вопрос: {{conts.ask}}</h4>
+<hr />
+<div class="input-field col m12 s12">
+    <textarea id="textarea1" class="materialize-textarea"></textarea>
+    <label for="textarea1">Ответ</label>
+</div>
+<div class="input-field col m4 s12">
+        <button id="sendans" class="btn-small waves-effect waves-light">
+        <i class="material-icons right">send</i> Отправить</button>
+</div>
+
+<script>
+    $( "#sendans" ).click(function() {
+      event.preventDefault();
+      if ($( "#textarea1" ).val()!='' && $( "#last_name" ).val()!=''){
+        $.get( "/addans", {id:{{conts.id}},ans: $( "#textarea1" ).val()} ).done(function( data ) {
+           console.log( "Data Loaded: " + data );
+            if (data=='ok'){
+            M.toast({html: 'Успешно!', classes: '#26a69a teal lighten-1 rounded'});
+          $( "#textarea1" ).val('')
+           window.location.replace('/admin')
+          } else {
+            M.toast({html: 'Ошибка!', classes: '#ef5350 red lighten-1 rounded'});
+          }
+        })
+      } else{
+         M.toast({html: 'Заполните все поля!', classes: '#ef5350 red lighten-1 rounded'});
+      }
+    })
+</script>
